@@ -1,0 +1,6 @@
+sched.o: kernel/sched.c config.h ../servers/ipc.h kernel/sys_types.h \
+  kernel/sched.h drivers/console.h
+sysinit.o: kernel/sysinit.c config.h ../servers/ipc.h kernel/sys_types.h \
+  os_config.h kernel/sched.h drivers/console.h
+console.o: drivers/console.c
+ipc.o: ../servers/ipc.c ../servers/ipc.h config.h kernel/sys_types.h
